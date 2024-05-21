@@ -1,0 +1,36 @@
+3)DQL :Data Query Language
+
+Select all:
+SELECT * FROM info
+
+Select Row:
+SELECT * FROM info where id=?
+
+Select Col:
+SELECT colname FROM info
+
+order by:
+SELECT * FROM info ORDER by name DESC
+
+4)DCL:Data Control Language
+Rollback,commit
+
+JOINS:
+
+1)INNER JOIN:
+SELECT * FROM location JOIN info on location.id = info.id
+
+2)LEFT JOIN:
+SELECT * FROM location LEFT JOIN info on location.id = info.id
+
+3)RIGHT JOIN:
+SELECT * FROM location RIGHT JOIN info on location.id = info.id
+
+4)FULL JOIN:
+
+SELECT * FROM location LEFT JOIN info on location.id = info.id
+UNION
+SELECT * FROM location RIGHT JOIN info on location.id = info.id
+
+
+
